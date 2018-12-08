@@ -1,0 +1,48 @@
+.play-try {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-number {
+    margin: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: $colorDark;
+    text-align: center;
+
+    @include breakpoint(tablet) {
+        font-size: 25px;
+    }
+}
+
+.btn-try,
+.btn-start {
+    margin: 25px;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    border: solid 2px $colorDarkGreen;
+    background-color: white;
+    color: $colorDarkGreen;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        box-shadow: none;
+        background-color: $colorDarkGreen;
+        ;
+        color: white;
+    }
+}
+
+
+#user-number {
+    border: solid 1px $colorLightBrown;
+    padding: 10px;
+    font-size: 18px;
+    width: 100px;
+    text-align: center;
+}

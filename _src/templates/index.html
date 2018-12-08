@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Adivina el número</title>
+  <link rel="icon" href="favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+  <header class="head">
+    <h1 class="title">Adivina el número</h1>
+  </header>
+
+  <main class="content-play">
+
+    <section class="play-interactive">
+      <div class="container-image-llama">
+        <img class="image-llama" src="assets/images/llama.png" alt="Alpaca">
+      </div>
+
+      <div class="container-interactive">
+        <partial src="_playTry.html"></partial>
+        <partial src="_registerWin.html"></partial>
+      </div>
+
+      <div class="animation">
+        <div class="container-image-bubble">
+          <img class="image-bubble" src="assets/images/bubbles/bubble10.png" alt="Bubble">
+        </div>
+        <div class="container-image-cactus">
+          <img class="image-cactus" src="assets/images/cactus.png" alt="Cactus">
+        </div>
+      </div>
+
+    </section>
+
+    <partial src="_score.html"></partial>
+  </main>
+
+  <footer class="footer">
+    <p>by Beatriz Garcia @2018</p>
+  </footer>
+
+
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

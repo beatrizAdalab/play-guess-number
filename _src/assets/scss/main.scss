@@ -1,0 +1,15 @@
+@import 'core/variables';
+@import 'core/mixins';
+@import 'pages/home';
+@import 'components/playTry';
+@import 'components/images';
+@import 'components/registerWin';
+@import 'components/score';
+@import 'layout/footer';
+
+
+
+@include reset();
+
+
+

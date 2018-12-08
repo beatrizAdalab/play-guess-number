@@ -1,0 +1,27 @@
+@mixin reset() {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+// mixin responsive
+$tabletPortrait: 768px;
+$desktop: 1280px;
+
+@mixin breakpoint($media) {
+
+  @if $media==tablet {
+    @media (min-width: $tabletPortrait) {
+      @content;
+    }
+  }
+
+  @else if $media==desktop {
+    @media (min-width: $desktop) {
+      @content;
+    }
+  }
+}

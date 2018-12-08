@@ -1,0 +1,43 @@
+.register-win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.hidden{
+    display: none;
+}
+
+.user-name {
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    color: $colorDark;
+    text-align: center;
+}
+
+.btn-save {
+    margin: 25px;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    border: solid 2px $colorDarkGreen;
+    background-color: white;
+    color: $colorDarkGreen;
+    cursor: pointer;
+    outline: none;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    &:hover {
+        box-shadow: none;
+        background-color: $colorDarkGreen;
+        ;
+        color: white;
+    }
+}
+
+#user-name {
+    border: solid 1px $colorLightBrown;
+    padding: 10px;
+    font-size: 18px;
+}
