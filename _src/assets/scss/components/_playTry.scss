@@ -5,7 +5,7 @@
 }
 
 .user-number {
-    margin: 20px;
+    margin: 20px 5px;
     font-size: 18px;
     font-weight: 600;
     color: $colorDark;
@@ -13,6 +13,7 @@
 
     @include breakpoint(tablet) {
         font-size: 25px;
+        margin:20px;
     }
 }
 

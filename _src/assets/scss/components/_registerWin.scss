@@ -8,11 +8,17 @@
 }
 
 .user-name {
-    margin: 20px;
-    font-size: 25px;
+    margin: 5px;
+    font-size:18px;
     font-weight: 600;
     color: $colorDark;
     text-align: center;
+
+    @include breakpoint(tablet) {
+        margin: 20px;
+        font-size: 25px;
+	  }
+   
 }
 
 .btn-save {
@@ -40,4 +46,11 @@
     border: solid 1px $colorLightBrown;
     padding: 10px;
     font-size: 18px;
+    width: 80%;
+
+    @include breakpoint(tablet) {
+        width: 100%;
+	  }
+   
+    
 }
