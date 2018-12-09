@@ -79,6 +79,11 @@ const trueAudio = new Audio("assets/audios/aplausos.mp3");
 
 
 //CONTROL------------------------------------------------
+window.addEventListener('native.keyboardshow', function(e){ 
+    setTimeout(function() {
+        document.activeElement.scrollIntoViewIfNeeded();
+    }, 100);
+});
 
 musicAudio.play(); // Music
 
