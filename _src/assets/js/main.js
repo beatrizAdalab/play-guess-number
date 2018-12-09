@@ -73,7 +73,6 @@ const players = document.querySelector(".players");
 
 const musicAudio = new Audio("assets/audios/Happy.mp3");
 musicAudio.loop = true;
-musicAudio.preload = true;
 const popAudio = new Audio("assets/audios/pop.mp3");
 const falseAudio = new Audio("assets/audios/error.mp3");
 const trueAudio = new Audio("assets/audios/aplausos.mp3");
