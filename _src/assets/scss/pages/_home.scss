@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-direction: column;
 
-
   @include breakpoint(desktop) {
     display: flex;
     flex-direction: row;
