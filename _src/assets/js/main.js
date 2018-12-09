@@ -1,87 +1,5 @@
-'use strict';
-
-//MODELS-------------------------------------------------
-
-function getRandomIntInclusive(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.ceil(Math.floor(Math.random() * (max - min + 1)) + min); //The maximum is inclusive and the minimum is inclusive 
-}
-
-let randomNumber = getRandomIntInclusive(1, 100);
-
-const bubbles = [{
-    src: "assets/images/bubbles/bubble10.png",
-    top: "1%"
-  },
-  {
-    src: "assets/images/bubbles/bubble9.png",
-    top: "5%"
-  },
-  {
-    src: "assets/images/bubbles/bubble8.png",
-    top: "9%"
-  },
-  {
-    src: "assets/images/bubbles/bubble7.png",
-    top: "13%"
-  },
-  {
-    src: "assets/images/bubbles/bubble6.png",
-    top: "17%"
-  },
-  {
-    src: "assets/images/bubbles/bubble5.png",
-    top: "21%"
-  },
-  {
-    src: "assets/images/bubbles/bubble4.png",
-    top: "25%"
-  },
-  {
-    src: "assets/images/bubbles/bubble3.png",
-    top: "29%"
-  },
-  {
-    src: "assets/images/bubbles/bubble2.png",
-    top: "33%"
-  },
-  {
-    src: "assets/images/bubbles/bubble1.png",
-    top: "37%"
-  },
-]
-
-let acc = 0;
-
-
-//VIEWS-------------------------------------------------------------------------
-
-const userNumber = document.querySelector("#user-number");
-const track = document.querySelector(".user-number");
-const btnTry = document.querySelector(".btn-try");
-const btnStart = document.querySelector(".btn-start");
-
-const boxTry = document.querySelector(".play-try");
-const registerWin = document.querySelector(".register-win");
-const userName = document.querySelector("#user-name");
-const btnSave = document.querySelector(".btn-save");
-
-const imageBubble = document.querySelector(".image-bubble");
-const containerImgBubble = document.querySelector(".container-image-bubble");
-const players = document.querySelector(".players");
-
-const musicAudio = new Audio("assets/audios/Happy.mp3");
-musicAudio.loop = true;
-const popAudio = new Audio("assets/audios/pop.mp3");
-const falseAudio = new Audio("assets/audios/error.mp3");
-const trueAudio = new Audio("assets/audios/aplausos.mp3");
-
-
 //CONTROL------------------------------------------------
-
-musicAudio.play(); // Music
-
+musicAudio.play();// Music
 
 function reset() { // Return to initial values
   acc = 0;
@@ -165,3 +83,4 @@ function handlerBtnStart(e) {
 btnTry.addEventListener("click", handlerBtnTry);
 btnSave.addEventListener("click", handlerBtnSave);
 btnStart.addEventListener("click", handlerBtnStart);
+
