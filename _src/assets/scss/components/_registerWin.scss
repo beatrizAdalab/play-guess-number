@@ -8,8 +8,8 @@
 }
 
 .user-name {
-    margin: 5px;
-    font-size:18px;
+    margin: 10px;
+    font-size:16px;
     font-weight: 600;
     color: $colorDark;
     text-align: center;
@@ -18,11 +18,10 @@
         margin: 20px;
         font-size: 25px;
 	  }
-   
 }
 
 .btn-save {
-    margin: 25px;
+    margin: 10px 10px 15px 10px;
     border-radius: 15px;
     width: 100px;
     height: 40px;
@@ -33,6 +32,10 @@
     outline: none;
     font-size: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    @include breakpoint(tablet) {
+        margin: 25px;
+	  }
 
     &:hover {
         box-shadow: none;
@@ -47,9 +50,10 @@
     padding: 10px;
     font-size: 18px;
     width: 80%;
+    text-align: center;
 
     @include breakpoint(tablet) {
-        width: 100%;
+        width: 60%;
 	  }
    
     
